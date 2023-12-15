@@ -12,7 +12,7 @@ Avant de debuter l'insatallation, vous devez avoir :
 
 
 
-## Guide d' utilissation 
+## Guide d' utilisation 
 
 
 ## License d'utilisation 
