@@ -8,19 +8,19 @@
     "net7.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Osiris Jordan\\.nuget\\packages\\": {}
+    "C:\\Users\\ouank\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Osiris Jordan\\Downloads\\PR\\PR.csproj",
+      "projectUniqueName": "C:\\Users\\ouank\\Desktop\\Projet -Programmation concurrente\\git\\programmation-systeme-reseau\\code c#\\projetResto\\PR.csproj",
       "projectName": "PR",
-      "projectPath": "C:\\Users\\Osiris Jordan\\Downloads\\PR\\PR.csproj",
-      "packagesPath": "C:\\Users\\Osiris Jordan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Osiris Jordan\\Downloads\\PR\\obj\\",
+      "projectPath": "C:\\Users\\ouank\\Desktop\\Projet -Programmation concurrente\\git\\programmation-systeme-reseau\\code c#\\projetResto\\PR.csproj",
+      "packagesPath": "C:\\Users\\ouank\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ouank\\Desktop\\Projet -Programmation concurrente\\git\\programmation-systeme-reseau\\code c#\\projetResto\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Osiris Jordan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ouank\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -64,7 +64,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
