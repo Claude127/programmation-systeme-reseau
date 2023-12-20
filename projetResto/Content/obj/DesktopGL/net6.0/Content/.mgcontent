@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Profile>Reach</Profile>
+  <Platform>DesktopGL</Platform>
+  <Config />
+  <SourceFiles>
+    <File>C:/Users/ouank/Desktop/Projet -Programmation concurrente/programmation-systeme-reseau/projetResto/Content/Background.png</File>
+    <File>C:/Users/ouank/Desktop/Projet -Programmation concurrente/programmation-systeme-reseau/projetResto/Content/blanc.png</File>
+    <File>C:/Users/ouank/Desktop/Projet -Programmation concurrente/programmation-systeme-reseau/projetResto/Content/commicuisineleft.png</File>
+    <File>C:/Users/ouank/Desktop/Projet -Programmation concurrente/programmation-systeme-reseau/projetResto/Content/commicuisineright.png</File>
+    <File>C:/Users/ouank/Desktop/Projet -Programmation concurrente/programmation-systeme-reseau/projetResto/Content/commicuisineup.png</File>
+    <File>C:/Users/ouank/Desktop/Projet -Programmation concurrente/programmation-systeme-reseau/projetResto/Content/commisalledown.png</File>
+    <File>C:/Users/ouank/Desktop/Projet -Programmation concurrente/programmation-systeme-reseau/projetResto/Content/commisalleleft.png</File>
+    <File>C:/Users/ouank/Desktop/Projet -Programmation concurrente/programmation-systeme-reseau/projetResto/Content/commisalleright.png</File>
+    <File>C:/Users/ouank/Desktop/Projet -Programmation concurrente/programmation-systeme-reseau/projetResto/Content/commisalleup.png</File>
+    <File>C:/Users/ouank/Desktop/Projet -Programmation concurrente/programmation-systeme-reseau/projetResto/Content/commiscuisinedown.png</File>
+    <File>C:/Users/ouank/Desktop/Projet -Programmation concurrente/programmation-systeme-reseau/projetResto/Content/groupe3.png</File>
+    <File>C:/Users/ouank/Desktop/Projet -Programmation concurrente/programmation-systeme-reseau/projetResto/Content/maitrehoteldown.png</File>
+    <File>C:/Users/ouank/Desktop/Projet -Programmation concurrente/programmation-systeme-reseau/projetResto/Content/maitrehotelleft.png</File>
+    <File>C:/Users/ouank/Desktop/Projet -Programmation concurrente/programmation-systeme-reseau/projetResto/Content/maitrehotelright.png</File>
+    <File>C:/Users/ouank/Desktop/Projet -Programmation concurrente/programmation-systeme-reseau/projetResto/Content/maitrehotelup.png</File>
+    <File>C:/Users/ouank/Desktop/Projet -Programmation concurrente/programmation-systeme-reseau/projetResto/Content/MasterChefDown.png</File>
+    <File>C:/Users/ouank/Desktop/Projet -Programmation concurrente/programmation-systeme-reseau/projetResto/Content/MasterchefLeft.png</File>
+    <File>C:/Users/ouank/Desktop/Projet -Programmation concurrente/programmation-systeme-reseau/projetResto/Content/Masterchefmovingright.png</File>
+    <File>C:/Users/ouank/Desktop/Projet -Programmation concurrente/programmation-systeme-reseau/projetResto/Content/MasterChefup.png</File>
+    <File>C:/Users/ouank/Desktop/Projet -Programmation concurrente/programmation-systeme-reseau/projetResto/Content/plongeurmovingdown.png</File>
+    <File>C:/Users/ouank/Desktop/Projet -Programmation concurrente/programmation-systeme-reseau/projetResto/Content/plongeurmovingleft.png</File>
+    <File>C:/Users/ouank/Desktop/Projet -Programmation concurrente/programmation-systeme-reseau/projetResto/Content/plongeurmovingright.png</File>
+    <File>C:/Users/ouank/Desktop/Projet -Programmation concurrente/programmation-systeme-reseau/projetResto/Content/plongeurmovingup.png</File>
+    <File>C:/Users/ouank/Desktop/Projet -Programmation concurrente/programmation-systeme-reseau/projetResto/Content/RangeChief.png</File>
+    <File>C:/Users/ouank/Desktop/Projet -Programmation concurrente/programmation-systeme-reseau/projetResto/Content/RangechiefLeft.png</File>
+    <File>C:/Users/ouank/Desktop/Projet -Programmation concurrente/programmation-systeme-reseau/projetResto/Content/Rangechiefmovingup.png</File>
+    <File>C:/Users/ouank/Desktop/Projet -Programmation concurrente/programmation-systeme-reseau/projetResto/Content/Rangechiefright.png</File>
+    <File>C:/Users/ouank/Desktop/Projet -Programmation concurrente/programmation-systeme-reseau/projetResto/Content/Sectionchefdown.png</File>
+    <File>C:/Users/ouank/Desktop/Projet -Programmation concurrente/programmation-systeme-reseau/projetResto/Content/sectionChefleft.png</File>
+    <File>C:/Users/ouank/Desktop/Projet -Programmation concurrente/programmation-systeme-reseau/projetResto/Content/sectionChefright.png</File>
+    <File>C:/Users/ouank/Desktop/Projet -Programmation concurrente/programmation-systeme-reseau/projetResto/Content/SectionChefup.png</File>
+    <File>C:/Users/ouank/Desktop/Projet -Programmation concurrente/programmation-systeme-reseau/projetResto/Content/serveurmovingdown.png</File>
+    <File>C:/Users/ouank/Desktop/Projet -Programmation concurrente/programmation-systeme-reseau/projetResto/Content/serveurmovingleft.png</File>
+    <File>C:/Users/ouank/Desktop/Projet -Programmation concurrente/programmation-systeme-reseau/projetResto/Content/serveurmovingright.png</File>
+    <File>C:/Users/ouank/Desktop/Projet -Programmation concurrente/programmation-systeme-reseau/projetResto/Content/serveurmovingup.png</File>
+  </SourceFiles>
+  <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+  </DestFiles>
+</SourceFileCollection>

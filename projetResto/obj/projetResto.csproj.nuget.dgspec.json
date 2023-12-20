@@ -1,18 +1,17 @@
-<<<<<<< HEAD:projetResto/obj/projetResto.csproj.nuget.dgspec.json
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ouank\\RiderProjects\\projetResto\\projetResto.csproj": {}
+    "C:\\Users\\ouank\\Desktop\\Projet -Programmation concurrente\\programmation-systeme-reseau\\projetResto\\projetResto.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ouank\\RiderProjects\\projetResto\\projetResto.csproj": {
+    "C:\\Users\\ouank\\Desktop\\Projet -Programmation concurrente\\programmation-systeme-reseau\\projetResto\\projetResto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ouank\\RiderProjects\\projetResto\\projetResto.csproj",
+        "projectUniqueName": "C:\\Users\\ouank\\Desktop\\Projet -Programmation concurrente\\programmation-systeme-reseau\\projetResto\\projetResto.csproj",
         "projectName": "projetResto",
-        "projectPath": "C:\\Users\\ouank\\RiderProjects\\projetResto\\projetResto.csproj",
+        "projectPath": "C:\\Users\\ouank\\Desktop\\Projet -Programmation concurrente\\programmation-systeme-reseau\\projetResto\\projetResto.csproj",
         "packagesPath": "C:\\Users\\ouank\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ouank\\RiderProjects\\projetResto\\obj\\",
+        "outputPath": "C:\\Users\\ouank\\Desktop\\Projet -Programmation concurrente\\programmation-systeme-reseau\\projetResto\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ouank\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -48,6 +47,18 @@
             "MonoGame.Framework.DesktopGL": {
               "target": "Package",
               "version": "[3.8.1.303, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "System.Threading.Tasks": {
+              "target": "Package",
+              "version": "[4.3.0, )"
             }
           },
           "imports": [
@@ -71,71 +82,4 @@
       }
     }
   }
-=======
-{
-  "format": 1,
-  "restore": {
-    "C:\\Users\\Osiris Jordan\\Downloads\\PR\\PR.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\Osiris Jordan\\Downloads\\PR\\PR.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Osiris Jordan\\Downloads\\PR\\PR.csproj",
-        "projectName": "PR",
-        "projectPath": "C:\\Users\\Osiris Jordan\\Downloads\\PR\\PR.csproj",
-        "packagesPath": "C:\\Users\\Osiris Jordan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Osiris Jordan\\Downloads\\PR\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\Osiris Jordan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net7.0-windows"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net7.0-windows7.0": {
-            "targetAlias": "net7.0-windows",
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net7.0-windows7.0": {
-          "targetAlias": "net7.0-windows",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            },
-            "Microsoft.WindowsDesktop.App.WindowsForms": {
-              "privateAssets": "none"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
-        }
-      }
-    }
-  }
->>>>>>> 9a66f9ce7e2d7c3847c4f4ba03c34d44b99616e6:code c#/projetResto/obj/PR.csproj.nuget.dgspec.json
 }
