@@ -10,8 +10,8 @@ public class HotelMaster : Position
 
     public List<RangeChief> RangeChiefs
     {
-        get => RangeChiefs;
-        set => RangeChiefs = value;
+        get => rangeChiefs;
+        set => rangeChiefs = value;
     }
     
      public HotelMaster() : base ()

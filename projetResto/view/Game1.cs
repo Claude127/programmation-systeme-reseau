@@ -1,4 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Text.RegularExpressions;
+using System.Threading;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
@@ -23,7 +26,7 @@ public class Game1 : Game
     
     private restau rhall; // instance de la map
 
-    public Hall hall;
+    private Hall hall;
     public HotelMasterController welcomeC;
     
     //liste de donnees 
@@ -40,7 +43,7 @@ public class Game1 : Game
     public Vector2 rangech2;
 
     //table controller 
-    public TableController tableC;
+    private TableController tableC;
     
     // tables 
     public List<Table> tables, tablesInUse;
@@ -48,7 +51,12 @@ public class Game1 : Game
     //commis de salle 
     private CommisSalleController commisS;
     
+    bool bill = true;
     
+    
+    public Hall Hall { get => hall; set => hall = value; }
+    public TableController TableController { get => tableC; set => tableC = value; }
+
 
     
     public Game1()
@@ -97,11 +105,14 @@ public class Game1 : Game
         
         //
 
-        TextPerso.Add(Content.Load<Texture2D>("commisalledown"));
-        TextPerso.Add(Content.Load<Texture2D>("groupe3"));
-        TextPerso.Add(Content.Load<Texture2D>("maitrehoteldown"));
-        TextPerso.Add(Content.Load<Texture2D>("RangeChief"));
-        TextPerso.Add(Content.Load<Texture2D>("serveurmovingdown"));
+        TextPerso.Add(Content.Load<Texture2D>("commisalledown")); //0
+        TextPerso.Add(Content.Load<Texture2D>("groupe3")); //1
+        TextPerso.Add(Content.Load<Texture2D>("maitrehoteldown")); //2
+        TextPerso.Add(Content.Load<Texture2D>("RangeChief")); //3
+        TextPerso.Add(Content.Load<Texture2D>("serveurmovingdown")); //4
+        TextPerso.Add(Content.Load<Texture2D>("perso1")); //5
+        TextPerso.Add(Content.Load<Texture2D>("perso8")); //6
+        TextPerso.Add(Content.Load<Texture2D>("perso10")); //7
         
         
         
@@ -133,6 +144,11 @@ public class Game1 : Game
         commisS.Texture = TextPerso[0];
 
     }
+    
+    private Vector2 rectToVect(Rectangle rect)
+    {
+        return new Vector2(rect.X, rect.Y);
+    }
 
     protected override void Update(GameTime gameTime)
     {
@@ -144,9 +160,178 @@ public class Game1 : Game
         
         _graphics.PreferredBackBufferWidth = WINDOW_WIDTH;
         _graphics.PreferredBackBufferHeight = WINDOW_HEIGHT;
+        
+        
+        //////////////////////////////////////////////////////////////////
+        
+// on initialise la liste des tables et des tables occupees
+        tables = new List<Table>(); 
+        tablesInUse = new List<Table>();
 
+//on parcourt les tables attribuees aux 02 chefs de rang puis on les ajoutes a la liste de tables . si la table est attribuee a un groupe , on l'ajoute dans la liste de tables occupees
+        foreach (Table t in hall.HotelMaster.RangeChiefs[0].Squares[0].Tables)
+        {
+            tables.Add(t);
+            if(t.GroupClient != null)
+            {
+                tablesInUse.Add(t);
+            }
+        }
+        foreach (Table t in hall.HotelMaster.RangeChiefs[1].Squares[0].Tables)
+        {
+            tables.Add(t);
+            if (t.GroupClient != null)
+            {
+                tablesInUse.Add(t);
+            }
+        }
+        
+        if ((gameTime.TotalGameTime.Seconds % 30 == 0)) //cette condition s'execute toutes les 30s du jeu
+        {
+            if (bill)
+            {
+                Random random = new Random();
+                int randomNumber = random.Next(3, 9);
+                //Recette recette = MapController.GetMap().Recettes[0];
+                GroupClient group = welcomeC.CreateGroup(randomNumber); // on cree un groupe donc le nombre varie entre 03 et 09 
+                //group.Clients.ForEach(c => c.Entry = recette); // on attribue une recette a chaque recette
+                group.State = GroupState.WaitDessert; // change l'etat du groupe 
+                CGroupes.Add(new GroupClientController(group)); //ajoute le groupe a la liste de groupe
+                ThreadPool.QueueUserWorkItem(SalleCommandsController.ConnectAndSendCommand, group); // envoie la commande a la cuisine 
+                bill = false;
+            }
+        }
+        else
+        {
+            bill = true;
+        }
+        
+        commisS.Update(gameTime, CGroupes[0].inTable, tables);
+        
+        foreach(GroupClientController groupe in CGroupes)
+        {
+            groupe.Texture = updateTexure(groupe.group.Clients.Count);
+
+//pour chaque groupe dans la liste , on debute le service sinon , on lui attribue une table
+
+            if (groupe.start)
+            {
+                groupe.Start(gameTime);
+            }
+            else
+            {
+                if (!groupe.inTable)
+                {
+                    putGroupToTable(groupe);
+                }
+                groupe.Update(gameTime, groupe.PosTable);
+            }
+
+
+        }
+        
+        server.Update(gameTime, tables);
+        hall.HotelMaster.RangeChiefs[0].Update(gameTime,rangech1);
+        hall.HotelMaster.RangeChiefs[1].Update(gameTime,rangech2);
+
+        
         base.Update(gameTime);
     }
+    
+    
+     private Texture2D updateTexure(int nbpersonnes)
+    {
+            
+
+        switch (nbpersonnes)
+        {
+            case 3:
+                return TextPerso[1];
+
+                break;
+            case 4:
+                return TextPerso[5];
+
+                break;
+            case 5:
+
+                return TextPerso[1];
+                break;
+            case 6:
+
+                return TextPerso[1];
+                break;
+            case 7:
+
+                return TextPerso[1];
+                break;
+            case 8:
+                return TextPerso[1];
+                break;
+            case 9:
+                return TextPerso[1];
+                break;
+        }
+        return TextPerso[7];
+    }
+
+
+    
+    
+        public void putGroupToTable(GroupClientController groupe)
+        {
+            if (hall.HotelMaster.RangeChiefs[0].Available)
+            {
+                foreach (Table t in hall.HotelMaster.RangeChiefs[0].Squares[0].Tables)
+                {
+                    if (t.GroupClient != null || t.NbPlaces < groupe.group.Clients.Count)
+                    {
+                        hall.HotelMaster.RangeChiefs[0].Available = false;
+                    }
+                    else
+                    {
+                        hall.HotelMaster.RangeChiefs[0].Available = true;
+                        break;
+                    }
+                }
+
+                Table table = tableC.OptimizedFindTable(hall.HotelMaster.RangeChiefs[0].Squares[0].Tables, groupe.group.Clients.Count);
+                if (table != null)
+                {
+                    tableC.AttributionTableGroup(groupe.group, table);
+                    hall.HotelMaster.RangeChiefs[0].isMoving = true;
+                    hall.HotelMaster.RangeChiefs[0].Available = false;
+                    rangech1 = rectToVect(table.Source);
+                    groupe.PosTable = rangech1;
+                    groupe.isMoving = true;
+                    groupe.inTable = true;
+                    
+                }
+                
+
+            }
+            else if (hall.HotelMaster.RangeChiefs[1].Available)
+            {
+
+
+                Table table = tableC.OptimizedFindTable(hall.HotelMaster.RangeChiefs[1].Squares[0].Tables, groupe.group.Clients.Count);
+                if (table != null)
+                {
+                    
+                    tableC.AttributionTableGroup(groupe.group, table);
+                    hall.HotelMaster.RangeChiefs[1].isMoving = true;
+                    hall.HotelMaster.RangeChiefs[1].Available = false;
+                    rangech2 = rectToVect(table.Source);
+                    groupe.PosTable = rangech2;
+                    groupe.isMoving = true;
+                    groupe.inTable = true;
+
+                }
+
+            }
+
+        }
+
 
     protected override void Draw(GameTime gameTime)
     {
@@ -156,6 +341,17 @@ public class Game1 : Game
         _spriteBatch.Begin();
         rhall.Draw(_spriteBatch);
         _spriteBatch.Draw(bg2Texture,Rectangle,Color.White);
+        
+        foreach(GroupClientController groupe in CGroupes)
+        {
+            groupe.Draw(_spriteBatch);
+        }
+        
+        hall.HotelMaster.RangeChiefs[0].Draw(_spriteBatch);
+        hall.HotelMaster.RangeChiefs[1].Draw(_spriteBatch);
+        server.Draw(_spriteBatch);
+        commisS.Draw(_spriteBatch);
+        
         _spriteBatch.End();
 
 
