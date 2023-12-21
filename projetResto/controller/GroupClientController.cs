@@ -19,7 +19,7 @@ public class GroupClientController
 
         public GroupClientController(GroupClient groupe)
         {
-            Position = new Vector2(6*rate,20*rate);
+            Position = new Vector2(21*rate,20*rate);
             group = groupe;
         }
         

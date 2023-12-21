@@ -17,7 +17,7 @@ public class CommisSalleController
 
         public CommisSalleController()
         {
-            this.Position = new Vector2(26 * tile, 16 * tile);
+            this.Position = new Vector2(21 * tile, 16 * tile);
         }
 
         public void moveTo(Vector2 finalpos)

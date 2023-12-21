@@ -89,4 +89,9 @@ C:\Users\ouank\Desktop\Projet -Programmation concurrente\programmation-systeme-r
 C:\Users\ouank\Desktop\Projet -Programmation concurrente\programmation-systeme-reseau\projetResto\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\ouank\Desktop\Projet -Programmation concurrente\programmation-systeme-reseau\projetResto\bin\Debug\net6.0\Content\perso1.xnb
 C:\Users\ouank\Desktop\Projet -Programmation concurrente\programmation-systeme-reseau\projetResto\bin\Debug\net6.0\Content\perso10.xnb
+C:\Users\ouank\Desktop\Projet -Programmation concurrente\programmation-systeme-reseau\projetResto\bin\Debug\net6.0\Content\groupe4.xnb
+C:\Users\ouank\Desktop\Projet -Programmation concurrente\programmation-systeme-reseau\projetResto\bin\Debug\net6.0\Content\groupe7.xnb
+C:\Users\ouank\Desktop\Projet -Programmation concurrente\programmation-systeme-reseau\projetResto\bin\Debug\net6.0\Content\groupe9.xnb
+C:\Users\ouank\Desktop\Projet -Programmation concurrente\programmation-systeme-reseau\projetResto\bin\Debug\net6.0\Content\perso5.xnb
+C:\Users\ouank\Desktop\Projet -Programmation concurrente\programmation-systeme-reseau\projetResto\bin\Debug\net6.0\Content\perso6.xnb
 C:\Users\ouank\Desktop\Projet -Programmation concurrente\programmation-systeme-reseau\projetResto\bin\Debug\net6.0\Content\perso8.xnb

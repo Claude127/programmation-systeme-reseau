@@ -15,6 +15,9 @@
     <File>C:/Users/ouank/Desktop/Projet -Programmation concurrente/programmation-systeme-reseau/projetResto/Content/commisalleup.png</File>
     <File>C:/Users/ouank/Desktop/Projet -Programmation concurrente/programmation-systeme-reseau/projetResto/Content/commiscuisinedown.png</File>
     <File>C:/Users/ouank/Desktop/Projet -Programmation concurrente/programmation-systeme-reseau/projetResto/Content/groupe3.png</File>
+    <File>C:/Users/ouank/Desktop/Projet -Programmation concurrente/programmation-systeme-reseau/projetResto/Content/groupe4.png</File>
+    <File>C:/Users/ouank/Desktop/Projet -Programmation concurrente/programmation-systeme-reseau/projetResto/Content/groupe7.png</File>
+    <File>C:/Users/ouank/Desktop/Projet -Programmation concurrente/programmation-systeme-reseau/projetResto/Content/groupe9.png</File>
     <File>C:/Users/ouank/Desktop/Projet -Programmation concurrente/programmation-systeme-reseau/projetResto/Content/maitrehoteldown.png</File>
     <File>C:/Users/ouank/Desktop/Projet -Programmation concurrente/programmation-systeme-reseau/projetResto/Content/maitrehotelleft.png</File>
     <File>C:/Users/ouank/Desktop/Projet -Programmation concurrente/programmation-systeme-reseau/projetResto/Content/maitrehotelright.png</File>
@@ -25,6 +28,8 @@
     <File>C:/Users/ouank/Desktop/Projet -Programmation concurrente/programmation-systeme-reseau/projetResto/Content/MasterChefup.png</File>
     <File>C:/Users/ouank/Desktop/Projet -Programmation concurrente/programmation-systeme-reseau/projetResto/Content/perso1.png</File>
     <File>C:/Users/ouank/Desktop/Projet -Programmation concurrente/programmation-systeme-reseau/projetResto/Content/perso10.png</File>
+    <File>C:/Users/ouank/Desktop/Projet -Programmation concurrente/programmation-systeme-reseau/projetResto/Content/perso5.png</File>
+    <File>C:/Users/ouank/Desktop/Projet -Programmation concurrente/programmation-systeme-reseau/projetResto/Content/perso6.png</File>
     <File>C:/Users/ouank/Desktop/Projet -Programmation concurrente/programmation-systeme-reseau/projetResto/Content/perso8.png</File>
     <File>C:/Users/ouank/Desktop/Projet -Programmation concurrente/programmation-systeme-reseau/projetResto/Content/plongeurmovingdown.png</File>
     <File>C:/Users/ouank/Desktop/Projet -Programmation concurrente/programmation-systeme-reseau/projetResto/Content/plongeurmovingleft.png</File>
@@ -44,6 +49,11 @@
     <File>C:/Users/ouank/Desktop/Projet -Programmation concurrente/programmation-systeme-reseau/projetResto/Content/serveurmovingup.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

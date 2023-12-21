@@ -81,7 +81,7 @@ public class Game1 : Game
         CGroupes.Add(new GroupClientController(welcomeC.CreateGroup(5)));
         
         // instancie un serveur(son controlleur)
-        server = new ServerController(new Vector2(25 * tile, 17 * tile));
+        server = new ServerController(new Vector2(20 * tile, 16 * tile));
         
         //instancie les chef de rang 
         rangech1 = hall.HotelMaster.RangeChiefs[0].Terminus;
@@ -113,6 +113,11 @@ public class Game1 : Game
         TextPerso.Add(Content.Load<Texture2D>("perso1")); //5
         TextPerso.Add(Content.Load<Texture2D>("perso8")); //6
         TextPerso.Add(Content.Load<Texture2D>("perso10")); //7
+        TextPerso.Add(Content.Load<Texture2D>("groupe4")); //8
+        TextPerso.Add(Content.Load<Texture2D>("perso5")); //9
+        TextPerso.Add(Content.Load<Texture2D>("perso6")); //10
+        TextPerso.Add(Content.Load<Texture2D>("groupe7")); //11
+        TextPerso.Add(Content.Load<Texture2D>("groupe9")); //12
         
         
         
@@ -191,7 +196,7 @@ public class Game1 : Game
             if (bill)
             {
                 Random random = new Random();
-                int randomNumber = random.Next(3, 9);
+                int randomNumber = random.Next(1, 9);
                 //Recette recette = MapController.GetMap().Recettes[0];
                 GroupClient group = welcomeC.CreateGroup(randomNumber); // on cree un groupe donc le nombre varie entre 03 et 09 
                 //group.Clients.ForEach(c => c.Entry = recette); // on attribue une recette a chaque recette
@@ -245,31 +250,35 @@ public class Game1 : Game
 
         switch (nbpersonnes)
         {
+            case 1:
+                return TextPerso[5];
+
+                break;
             case 3:
                 return TextPerso[1];
 
                 break;
             case 4:
-                return TextPerso[5];
+                return TextPerso[8];
 
                 break;
             case 5:
 
-                return TextPerso[1];
+                return TextPerso[9];
                 break;
             case 6:
 
-                return TextPerso[1];
+                return TextPerso[10];
                 break;
             case 7:
 
-                return TextPerso[1];
+                return TextPerso[11];
                 break;
             case 8:
-                return TextPerso[1];
+                return TextPerso[6];
                 break;
             case 9:
-                return TextPerso[1];
+                return TextPerso[12];
                 break;
         }
         return TextPerso[7];
